@@ -780,5 +780,8 @@
 .image-popup img:hover {
   transform: scale(1.03);
 }
+#masage{
+	padding-top:10px;
+}
 
 
