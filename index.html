@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedan+SC&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parwaiz Ahmed | Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <!-- ==== FONT AWESOME ICONS ==== -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+  />
+
+</head>
+
+<body>
+  <div class="main">
+    <nav>
+      <div class="logo">Parwaiz Ahmed</div>
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <div class="container" id="home">
+      <div class="box1">
+        <h3>Hi, I'm Parwaiz Ahmed</h3>
+        <h1>Web Developer</h1>
+        <p>
+          I’m a passionate Web Developer dedicated to creating modern, responsive,
+          and user-friendly websites. I love turning ideas into real digital experiences
+          using clean code and creative design.
+        </p>
+
+        <!-- ==== SOCIAL ICONS ==== -->
+        <div class="social-icons">
+          <a href="https://www.instagram.com/parwaizahmed277/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://web.facebook.com/profile.php?id=100094285875146" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.youtube.com/@Technicalparwaiz"  target="_blank" class="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/search?q=%40PARWAIZ.AHMED527&t=1760933941996" target="_blank" class="tiktok"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <a href="Parwaiz_Ahmed_CV.zip" download class="btn" id="btc">Download CV</a>
+      </div>
+
+      <div class="box2">
+        <img src="pictures/my.png" alt="My Picture" />
+      </div>
+    </div>
+  </div>
+  <hr>
+  <section class="about" id="about">
+  <div class="about-container">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm <strong>Parwaiz Ahmed</strong>, a passionate Web Developer who loves creating
+        modern, responsive, and user-friendly websites. I enjoy turning ideas into real
+        digital experiences using clean code, creative design, and modern technologies.
+        My goal is to deliver websites that not only look great but also perform smoothly
+        across all devices.
+      </p>
+      <a href="about.html" class="read-more-btn">Read More</a>
+    </div>
+    <div class="about-image">
+      <img src="pictures/my.png" alt="Parwaiz Ahmed" />
+    </div>
+  </div>
+</section>
+<hr>
+<section class="services" id="services">
+  <div class="services-container">
+    <h2>My Services</h2>
+    <div class="services-cards">
+
+      <!-- ==== SERVICE 1 ==== -->
+      <div class="service-card">
+        <i class="fas fa-code"></i>
+        <h3>Website Development</h3>
+        <p>
+          I build modern, responsive, and user-friendly websites tailored to your business needs.
+        </p>
+        <a href="services.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- ==== SERVICE 2 ==== -->
+      <div class="service-card">
+        <i class="fas fa-bullhorn"></i>
+        <h3>Graphic Designing</h3>
+        <p>
+         Creative and modern designs that give your brand a unique and professional look.
+        </p>
+        <a href="graphic.html" class="read-more">Read More</a>
+      </div>
+
+      <!-- ==== SERVICE 3 ==== -->
+      <div class="service-card">
+        <i class="fas fa-pencil-ruler"></i>
+        <h3>UI/UX Designing</h3>
+        <p>
+          I design intuitive interfaces and seamless user experiences that engage your audience.
+        </p>
+        <a href="ui-ux.html" class="read-more">Read More</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<hr>
+
+<!-- ==== PORTFOLIO SECTION ==== -->
+<section class="portfolio" id="portfolio">
+  <div class="portfolio-container">
+    <h2>My Portfolio</h2>
+    <p>Some of my latest creative web development and design projects.</p>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="portfolio-item">
+        <img src="pictures/business.jpg" alt="Project 1" />
+        <div class="portfolio-overlay">
+          <h3>Business Website</h3>
+          <button class="read-more" onclick="openImage('pictures/business2.png')">View Project</button>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="portfolio-item">
+        <img src="pictures/e-commerce.jpg" alt="Project 2" />
+        <div class="portfolio-overlay">
+          <h3>E-Commerce Store</h3>
+          <button class="read-more" onclick="openImage('pictures/e-commerce2.jpg')">View Project</button>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="portfolio-item">
+        <img src="pictures/landing-page.jpg" alt="Project 3" />
+        <div class="portfolio-overlay">
+          <h3>Landing Page</h3>
+          <button class="read-more" onclick="openImage('pictures/landing-page2.jpg')">View Project</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==== IMAGE POPUP ==== -->
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+  <img id="popupImage" src="" alt="Full Image" />
+</div>
+<hr>
+<section class="contact" id="contact">
+  <div class="contact-container">
+    <h2>Contact Me</h2>
+    <p>If you want to work together or have any questions, feel free to reach out!</p>
+
+    <div class="contact-content">
+      <!-- ==== CONTACT INFO ==== -->
+      <div class="contact-info">
+        <div><i class="fas fa-map-marker-alt"></i>	Mirpurkhas, Pakistan</div>
+        <div><i class="fas fa-envelope"></i> Parwaizahmed277@gmail.com</div>
+        <div><i class="fas fa-phone"></i> +92 701232785</div>
+      </div>
+
+      <!-- ==== CONTACT FORM ==== -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <input type="text" placeholder="Subject" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+<hr>
+<footer class="footer">
+  <div class="footer-container">
+    <p class="footer-copy">&copy; 2025 Parwaiz Ahmed. All Rights Reserved.</p>
+  </div>
+</footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById("navLinks");
+      const hamburger = document.getElementById("hamburger");
+      navLinks.classList.toggle("active");
+      hamburger.classList.toggle("active");
+    }
+    
+    function openImage(src) {
+  const popup = document.getElementById("imagePopup");
+  const popupImage = document.getElementById("popupImage");
+  popupImage.src = src;
+  popup.style.display = "flex";
+}
+
+function closeImage() {
+  document.getElementById("imagePopup").style.display = "none";
+}
+
+    
+    </script>
+
+</body>
+</html>
