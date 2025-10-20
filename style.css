@@ -18,7 +18,7 @@
     .main {
       width: 100%;
       min-height: 100vh;
-      background-image: url("pictures/bg.jpg");
+      background-image: url("bg.jpg");
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
